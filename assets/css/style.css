@@ -355,7 +355,7 @@ ul.metro li.ver .drop-4-col {
 
 #maincontent {
 	z-index:1000;
-	margin:0 0 30px;
+	margin:60px 0 30px;
 }
 
 
@@ -1385,6 +1385,11 @@ footer a:hover {
 footer .verybottom {
 	padding-top:30px;
 	background:#0f0f0f;
+	color: #4f4f4f;
+}
+
+footer .verybottom a {
+	color: #4f4f4f;
 }
 
 footer .nav-list li, footer .nav-list li a, footer .nav-list li.nav-header {
