@@ -177,7 +177,7 @@
             <!-- <h3>Para todos os publicos</h3>
               <p>
                 Aqui pode ter um texto
-              </p>  
+              </p>
               <a href="#">Leia mais</a> -->
             </div>
           </div>
@@ -238,7 +238,7 @@
             <h3>Para todos os publicos</h3>
             <p>
               Aqui pode ter um texto
-              </p>  
+              </p>
             <a href="#">Leia mais</a>
           </div>
         </div>
@@ -539,16 +539,19 @@
               </div>
             </li>`;
             document.getElementById('destaques').innerHTML = destaquesStr;
+            jQuery('ul.da-thumbs > li').hoverdir();
+            $('#latest-work').carousel();
+
           })
         });
     }
-    
+
     function completed() {
         document.removeEventListener("DOMContentLoaded", completed);
         window.removeEventListener("load", completed);
         ready();
     }
-    
+
     if (document.readyState === "complete" ||
         (document.readyState !== "loading" && !document.documentElement.doScroll)) {
         ready(); // está pronto!
