@@ -3,7 +3,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Scaffold responsive website template</title>
+  <title>Gentileza - conteúdo de qualidade acessível para todos</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <meta name="author" content="">
@@ -12,7 +12,9 @@
   <link href="assets/css/bootstrap.css" rel="stylesheet">
   <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
   <link href="assets/css/docs.css" rel="stylesheet">
+  <link href="assets/css/prettyPhoto.css" rel="stylesheet">
   <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+  <link href="assets/css/camera.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300|Open+Sans:400,300,300italic,400italic" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/color/success.css" rel="stylesheet">
@@ -32,34 +34,37 @@
   ======================================================= -->
 </head>
 
-<body data-spy="scroll" data-target=".bs-docs-sidebar">
+<body>
+
   <header>
     <!-- Navbar
     ================================================== -->
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-
           <!-- logo -->
           <a class="brand logo" href="index.html">
-						<img src="assets/img/logo.png" alt="" />
-				  </a>
+            <img src="assets/img/logogentileza.png" style="max-width: 200px;" alt="Gentileza" />
+          </a>
           <!-- end logo -->
 
           <!-- top menu -->
           <div>
             <nav>
               <ul class="nav topnav">
-                <li class="dropdown success">
+                <!-- <li class="dropdown primary active">
                   <a href="index.html"><i class="icon-home icon-white"></i> Home</a>
                   <ul class="dropdown-menu">
                     <li><a href="index_alt1.html">Index alt 1</a></li>
                     <li><a href="index_alt2.html">Index alt 2</a></li>
                   </ul>
-                </li>
+                </li> -->
                 <li class="dropdown primary">
-                  <a href="#"><i class="icon-star icon-white"></i> Features</a>
-                  <ul class="dropdown-menu">
+                  <a href="#">
+                    <!-- <i class="icon-star icon-white"></i>  -->
+                    Materiais
+                  </a>
+                  <!-- <ul class="dropdown-menu">
                     <li><a href="overview.html">Overview</a></li>
                     <li><a href="scaffolding.html">Scaffolding</a></li>
                     <li><a href="base-css.html">Base CSS</a></li>
@@ -72,22 +77,28 @@
                         <li><a href="#">Example menu</a></li>
                       </ul>
                     </li>
-                  </ul>
+                  </ul> -->
                 </li>
-                <li class="dropdown danger">
-                  <a href="#"><i class="icon-leaf icon-white"></i> Pages</a>
-                  <ul class="dropdown-menu">
+                <li class="dropdown primary">
+                  <a href="#">
+                    <!-- <i class="icon-leaf icon-white"></i> -->
+                     Temas
+                  </a>
+                  <!-- <ul class="dropdown-menu">
                     <li><a href="about.html">About us</a></li>
                     <li><a href="services.html">Our services</a></li>
                     <li><a href="pricingtable.html">Pricing table</a></li>
                     <li><a href="faq.html">F.A.Q</a></li>
                     <li><a href="fullwidth.html">Fullwidth</a></li>
                     <li><a href="404.html">404</a></li>
-                  </ul>
+                  </ul> -->
                 </li>
-                <li class="dropdown warning">
-                  <a href="#"><i class="icon-camera icon-white"></i> Portfolio</a>
-                  <ul class="dropdown-menu">
+                <li class="dropdown primary">
+                  <a href="#">
+                    <!-- <i class="icon-camera icon-white"></i> -->
+                     Freelancer
+                  </a>
+                  <!-- <ul class="dropdown-menu">
                     <li class="dropdown"><a href="#">Portfolio type 1</a>
                       <ul class="dropdown-menu sub-menu">
                         <li><a href="portfolio-alt1-2cols.html">2 columns</a></li>
@@ -104,9 +115,9 @@
                     </li>
                     <li><a href="portfolio-alt3.html">Portfolio type 3</a></li>
                     <li><a href="portfolio-detail.html">Portfolio detail</a></li>
-                  </ul>
+                  </ul> -->
                 </li>
-                <li class="dropdown info">
+                <!-- <li class="dropdown primary">
                   <a href="#"><i class="icon-bullhorn icon-white"></i> Blog</a>
                   <ul class="dropdown-menu">
                     <li><a href="blog_left_sidebar.html">Blog left sidebar</a></li>
@@ -114,9 +125,12 @@
                     <li><a href="post_left_sidebar.html">Post left sidebar</a></li>
                     <li><a href="post_right_sidebar.html">Post right sidebar</a></li>
                   </ul>
-                </li>
-                <li class="inverse active">
-                  <a href="contact.html"><i class="icon-envelope icon-white"></i> Contact</a>
+                </li> -->
+                <li class="inverse">
+                  <a href="contact.html">
+                    <!-- <i class="icon-envelope icon-white"></i> -->
+                     Fale Conosco
+                  </a>
                 </li>
               </ul>
             </nav>
@@ -134,14 +148,14 @@
       <div class="container">
         <div class="row">
           <div class="span8">
-            <h3><i class="m-icon-big-swapright m-icon-white"></i> Contact us</h3>
-            <p>Disputationi comprehensam nam ut eam id accusata explicari minim splendide duo ea dicant.</p>
+            <h3><i class="m-icon-big-swapright m-icon-white"></i>Entre em Contato</h3>
+            <p>
+                Informe seus dados abaixo e receba o contato de um Consultor sobre o nosso serviços.
+            </p>
           </div>
           <div class="span4">
             <div class="input-append">
-              <form class="form-search">
-                <input type="text" class="input-medium search-query">
-                <button type="submit" class="btn btn-inverse">Search</button>
+              
               </form>
             </div>
           </div>
@@ -156,16 +170,19 @@
         <div class="span4">
           <aside>
             <div class="widget">
-              <h4 class="heading-success"><span class="btn btn-large btn-success"><i class="m-icon-big-swapdown m-icon-white"></i></span>&nbsp;&nbsp;Get in touch with us</h4>
+              <h4 class="heading-success"><span class="btn btn-large btn-success"><i class="m-icon-big-swapdown m-icon-white"></i></span>&nbsp;&nbsp;Entre em contato</h4>
               <ul>
                 <li><label><strong>Phone : </strong></label>
-                  <p>+808 878 92 0r +808 878 91</p>
+                  <p>(31) 2555-3066 </p>
                 </li>
                 <li><label><strong>Email : </strong></label>
-                  <p>info@yourdomain.com</p>
+                  <p>contato@rockcontent.com</p>
                 </li>
-                <li><label><strong>Adress : </strong></label>
-                  <p>Tinggi sekali Tower Jl. Kemacetan timur No.13 Jakarta selatan</p>
+                <li><label><strong>Endereço : </strong></label>
+                  <p>
+                      R. Paraíba, 330 - 13º andar - Funcionários
+                      Belo Horizonte - MG, Brasil 30130-917
+                    </p>
                 </li>
               </ul>
             </div>
@@ -173,7 +190,7 @@
         </div>
         <div class="span8">
           <div class="well">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22864.11283411948!2d-73.96468908098944!3d40.630720240038435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbg!4v1540447494452" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9589.189608477947!2d-43.94070212498523!3d-19.92802912160861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa699da54bcb319%3A0x927a609070614767!2sRock+Content!5e0!3m2!1spt-BR!2sbr!4v1553171648969" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
           <div class="spacer30"></div>
 
