@@ -1,0 +1,50 @@
+[
+    {
+        "imgSrc": "assets/img/dummies/work1.jpg",
+        "imgAlt": "Portfolio name",
+        "linkHref": "portfolio-detail.html",
+        "h5Name": "Portfolio name 1"
+    },
+    {
+        "imgSrc": "assets/img/dummies/work2.jpg",
+        "imgAlt": "Portfolio name",
+        "linkHref": "portfolio-detail.html",
+        "h5Name": "Portfolio name 2"
+    },
+    {
+        "imgSrc": "assets/img/dummies/work3.jpg",
+        "imgAlt": "Portfolio name",
+        "linkHref": "portfolio-detail.html",
+        "h5Name": "Portfolio name 3"
+    },
+    {
+        "imgSrc": "assets/img/dummies/work4.jpg",
+        "imgAlt": "Portfolio name",
+        "linkHref": "portfolio-detail.html",
+        "h5Name": "Portfolio name 4"
+    },
+    {
+        "imgSrc": "assets/img/dummies/work5.jpg",
+        "imgAlt": "Portfolio name",
+        "linkHref": "portfolio-detail.html",
+        "h5Name": "Portfolio name 5"
+    },
+    {
+        "imgSrc": "assets/img/dummies/work6.jpg",
+        "imgAlt": "Portfolio name",
+        "linkHref": "portfolio-detail.html",
+        "h5Name": "Portfolio name 6"
+    },
+    {
+        "imgSrc": "assets/img/dummies/work7.jpg",
+        "imgAlt": "Portfolio name",
+        "linkHref": "portfolio-detail.html",
+        "h5Name": "Portfolio name 7"
+    },
+    {
+        "imgSrc": "assets/img/dummies/work8.jpg",
+        "imgAlt": "Portfolio name",
+        "linkHref": "portfolio-detail.html",
+        "h5Name": "Portfolio name 8"
+    }
+]

@@ -281,20 +281,24 @@
           <div id="latest-work" class="carousel btleft">
             <div class="carousel-wrapper">
 
-              <ul class="portfolio-home da-thumbs">
+              <ul class="portfolio-home da-thumbs" id="destaques">
                 <li>
                   <div class="thumbnail">
                     <div class="image-wrapp">
                       <img src="assets/img/dummies/work1.jpg" alt="Portfolio name" title="" />
                       <article class="da-animate da-slideFromRight" style="display: block;">
-                        <a class="link_post" href="portfolio-detail.html"><img src="assets/img/icons/link_post_icon.png" alt="" /></a>
-                        <span><a class="zoom" data-pretty="prettyPhoto" href="assets/img/dummies/big1.jpg"><img src="assets/img/icons/zoom_icon.png" alt="Portfolio name" title="Portfolio name" /></a></span>
+                        <a class="link_post" href="portfolio-detail.html">
+                          <img src="assets/img/icons/link_post_icon.png" alt="" /></a>
+                        <span>
+                          <a class="zoom" data-pretty="prettyPhoto" href="assets/img/dummies/big1.jpg">
+                            <img src="assets/img/icons/zoom_icon.png" alt="Portfolio name" title="Portfolio name" />
+                          </a>
+                        </span>
                       </article>
                     </div>
                     <div class="caption">
                       <h5>Portfolio name 1</h5>
                     </div>
-
                   </div>
                 </li>
                 <li>
@@ -410,7 +414,7 @@
       <div class="row">
         <div class="span4">
           <div class="widget">
-            <h4>About us</h4>
+            <h4>About us</h4>https://www.techtudo.com.br/dicas-e-tutoriais/noticia/2014/03/como-gravar-videos-da-tela-do-computador-no-windows-e-no-mac-os.html
             <address>
 					<strong>Rock Content</strong><br>
 					R. Paraíba, 330 - 13º andar - Funcionários<br>
@@ -471,7 +475,7 @@
           <div class="span6">
             <p>&copy; Scaffold - All right reserved</p>
           </div>
-          <div class="span6">
+          <div class="span6">destaques
             <div class="pull-right">
               <div class="credits">
                 <!--
@@ -506,6 +510,53 @@
 
   <!-- Template Custom JavaScript File -->
   <script src="assets/js/custom.js"></script>
+  <script>
+    function ready() {
+      // quando esta função correr o DOM está acessível
+      let destaquesStr = '';
+      fetch('database/destaques.json')
+        .then(data => data.json())
+        .then(destaques => {
+          destaques.map(destaque => {
+            destaquesStr += `<li>
+              <div class="thumbnail">
+                <div class="image-wrapp">
+                  <img src="${destaque.imgSrc}" alt="${destaque.imgAlt}" title="" />
+                  <article class="da-animate da-slideFromRight" style="display: block;">
+                    <a class="link_post" href="${destaque.linkHref}">
+                      <img src="assets/img/icons/link_post_icon.png" alt="" />
+                    </a>
+                    <span>
+                      <a class="zoom" data-pretty="prettyPhoto" href="assets/img/dummies/big1.jpg">
+                        <img src="assets/img/icons/zoom_icon.png" alt="Portfolio name" title="Portfolio name" />
+                      </a>
+                    </span>
+                  </article>
+                </div>
+                <div class="caption">
+                  <h5>${destaque.h5Name}</h5>
+                </div>
+              </div>
+            </li>`;
+            document.getElementById('destaques').innerHTML = destaquesStr;
+          })
+        });
+    }
+    
+    function completed() {
+        document.removeEventListener("DOMContentLoaded", completed);
+        window.removeEventListener("load", completed);
+        ready();
+    }
+    
+    if (document.readyState === "complete" ||
+        (document.readyState !== "loading" && !document.documentElement.doScroll)) {
+        ready(); // está pronto!
+    } else { // ainda não está pronto...
+        document.addEventListener("DOMContentLoaded", completed);
+        window.addEventListener("load", completed);
+    }
+  </script>
 
 </body>
 
