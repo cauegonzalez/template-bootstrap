@@ -102,9 +102,10 @@ iframe, embed, object {
 }
 
 .box a, .box a:hover {
-	color:#fff;
+	color: #0088cc;
+	font-weight: bold !important;
+	text-decoration: none;
 }
-
 
 .cta-primary {
 	background: #127b9b;

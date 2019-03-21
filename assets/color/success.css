@@ -4,11 +4,13 @@ a {
 }
 
 a:hover {
-	color:#77b201;
+  color:#009cea;
+  text-decoration: none;
 }
 
 .btn-link:hover {
-  color: #77b201;
+  color: #009cea;
+  text-decoration: none;
 }
 
 .color {
